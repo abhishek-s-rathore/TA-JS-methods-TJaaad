@@ -73,34 +73,46 @@ let numbersTwo = [1, 2, [3, 4, [5, 6]]];
 let numbersThree = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
 
 // Convert the numbers array to one level element. Remove sub-arrays to individual elements and log them
-// let numbersFlat = numbers.flat("Infinity");
-// let numbersTwoFlat = numbersTwo.flat("Infinty");
-console.log(numbersThree.flat(Infinity));
+console.log(numbers.flat(1));
 
 // Convert the numbersTwo array to one level element. Remove all sub-arrays to individual elements and log them.
 // (for multiple level flat accepts argument by default it's 1 `array.flat(2)`)
+console.log(numbersTwo.flat(2));
 
 // Convert the numbersThree array to one level element.
+numbersThree = numbersThree.flat(Infinity);
+
 // Remove all sub-arrays to individual elements, log them and update the value of numbersThree to the new flat array.
+console.log(numbersThree.flat(Infinity));
 
 // Use forEach to log all the elements of numberThree array
+numbersThree.forEach((number) => console.log(number));
 
 // Create a new variable named doubleNumbers that store the numberThree array (each element should be multiplied by 2). Use map
+let doubleNumbers = numbersThree.map((num) => num * 2);
 
 // Create a new variable named tripleNumbers that store the numberThree array (each element should be multiplied by 3). Use map
+let trippleNumbers = numbersThree.map((num) => num * 3);
 
 // Create a new variable named halfNumbers that store the numberThree array (each element should be divided by 2). Use map
-
+let halfNumbers = numbersThree.map((num) => num / 2);
 // Create a new variable named oddNumbers that store all the odd numbers in numbersThree array
+let oddNumbers = numbersThree.filter((num) => num % 2 !== 0);
 
 // Create a new variable named evenNumbers that store all the even numbers in numbersThree array
+let evenNumbers = numbersThree.filter((num) => num % 2 === 0);
 
 // Find the index of 10 in numbersThree array
+console.log(numbersThree.findIndex((num) => num === 10));
 
 // Reverse the values of numbersThree array
+numbersThree.reverse();
 
 // Reverse the values of numbersTwo array
+numbersThree.reverse();
 
 // Join all fruits with '-', convert to uppercase and log it
+console.log(fruits.join("-").toUpperCase());
 
 // Join all fruits with '&', convert to lowercase and log it
+console.log(fruits.join("&").toLowerCase());
