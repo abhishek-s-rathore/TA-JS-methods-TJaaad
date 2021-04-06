@@ -41,15 +41,19 @@ console.log(from.concat(" said ", quote, " to ", to, "."));
 /*
 6. Does from, to and quote ends with "rk". Check all three.
 */
-console.log(
-  to.charAt(from.length - 2) === "r" && from.charAt(to.length - 1) === "k"
-);
-console.log(
-  to.charAt(quote.length - 2) === "r" && to.charAt(quote.length - 1) === "k"
-);
-console.log(
-  to.charAt(to.length - 2) === "r" && to.charAt(to.length - 1) === "k"
-);
+// console.log(
+//   to.charAt(from.length - 2) === "r" && from.charAt(to.length - 1) === "k"
+// );
+// console.log(
+//   to.charAt(quote.length - 2) === "r" && to.charAt(quote.length - 1) === "k"
+// );
+// console.log(
+//   to.charAt(to.length - 2) === "r" && to.charAt(to.length - 1) === "k"
+// );
+
+from.endsWith("rk");
+quote.endsWith("rk");
+to.endsWith("rk");
 
 /*
 7. Does quote includes the word "Only"
@@ -79,7 +83,7 @@ quoteSplitted.splice(quoteSplitted.length - 1, 1, "tomorrow");
 /*
 12. Find the index of second "o" in quote. Use indexOf
 */
-console.log(quote.indexOf("o"));
+console.log(quote.indexOf("o", 8));
 
 /*
 13. Find the last index of letter "a" in quote.
@@ -98,7 +102,9 @@ for (let i = quote.length - 1; i >= 0; i--) {
     }
   }
 }
-
+//---------OR---------//
+// console.log(quote.lastIndexOf("a", quote.lastIndexOf("a")-1))
+//--------OR----------//
 // let aCount = quote.split("a").length - 1;
 // let count = 0;
 // for (let i = 0; i < quote.length; i++) {
