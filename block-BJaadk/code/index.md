@@ -8,10 +8,11 @@ let numbers = [100, 200, 33, 45, 65, 76, 51];
 function double(num) {
   alert(num);
 }
+
 let doubleNum = numbers.forEach(double);
 ```
-![](./img/main.png)
 
+![1](./images/WhatsApp-01);
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -21,6 +22,8 @@ function double(num) {
 let doubleNum = numbers.forEach(double);
 ```
 
+![2](./images/WhatsApp-02);
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function double(num) {
@@ -28,6 +31,8 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
+
+![3](./images/WhatsApp-03);
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -37,6 +42,8 @@ function double(num) {
 let doubleNumbers = numbers.map(double);
 ```
 
+![4](./images/WhatsApp-04);
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function addTwo(num) {
@@ -45,6 +52,8 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+![4](./images/WhatsApp-04);
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function addTwo(num) {
@@ -52,6 +61,8 @@ function addTwo(num) {
 }
 let doubleNumbers = numbers.map(addTwo);
 ```
+
+![5](./images/WhatsApp-05);
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -61,6 +72,8 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+![6](./images/WhatsApp-06);
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function isOdd(num) {
@@ -68,6 +81,8 @@ function isOdd(num) {
 }
 let oddNumbers = numbers.filter(isOdd);
 ```
+
+![7](./images/WhatsApp-07);
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -77,6 +92,8 @@ function test(num) {
 let filteredNumbers = numbers.filter(test);
 ```
 
+![8](./images/WhatsApp-08);
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function test(num) {
@@ -84,6 +101,8 @@ function test(num) {
 }
 let filteredNumbers = numbers.filter(test);
 ```
+
+![9](./images/WhatsApp-09);
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -93,6 +112,8 @@ function add(accumulator, currentValue) {
 let sum = numbers.reduce(add);
 ```
 
+![10](./images/WhatsApp-10);
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function add(accumulator, currentValue) {
@@ -100,3 +121,5 @@ function add(accumulator, currentValue) {
 }
 let sum = numbers.reduce(add);
 ```
+
+![11](./images/WhatsApp-11);
