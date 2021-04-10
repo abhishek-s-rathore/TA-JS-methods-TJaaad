@@ -28,11 +28,11 @@ console.log(lengthArray([...words]));
 // - Create a new array that only contains word with atleast one vowel.
 let wordsWithVowel = [...words].filter((elem) => {
   return (
-    elem.includes("a") ||
-    elem.includes("e") ||
-    elem.includes("i") ||
-    elem.includes("o") ||
-    elem.includes("u")
+    elem.toLowerCase().includes("a") ||
+    elem.toLowerCase().includes("e") ||
+    elem.toLowerCase().includes("i") ||
+    elem.toLowerCase().includes("o") ||
+    elem.toLowerCase().includes("u")
   );
 });
 
@@ -44,11 +44,11 @@ console.log(words.indexOf("rhythm"));
 // - Create a new array that contians words not starting with vowel.
 let wordsStratWithVowel = [...words].filter((elem) => {
   return (
-    elem.startsWith("a") ||
-    elem.startsWith("e") ||
-    elem.startsWith("i") ||
-    elem.startsWith("o") ||
-    elem.startsWith("u")
+    elem.toLowerCase().startsWith("a") ||
+    elem.toLowerCase().startsWith("e") ||
+    elem.toLowerCase().startsWith("i") ||
+    elem.toLowerCase().startsWith("o") ||
+    elem.toLowerCase().startsWith("u")
   );
 });
 
@@ -57,11 +57,11 @@ console.log(wordsStratWithVowel);
 // - Create a new array that contianse words not ending with vowel
 let wordsEndsWithConsonents = [...words].filter((elem) => {
   if (
-    elem.startsWith("a") ||
-    elem.startsWith("e") ||
-    elem.startsWith("i") ||
-    elem.startsWith("o") ||
-    elem.startsWith("u")
+    elem.toLowerCase().endsWith("a") ||
+    elem.toLowerCase().endsWith("e") ||
+    elem.toLowerCase().endsWith("i") ||
+    elem.toLowerCase().endsWith("o") ||
+    elem.toLowerCase().endsWith("u")
   ) {
   } else {
     return elem;
@@ -114,12 +114,12 @@ console.log(numbers.reduce((acc, cv) => acc + cv, 0));
 
 //- Write a function averageNumbers that receives an array of numbers and calculate the average of the numbers
 let averageNumbers = function (array) {
-  let sum = array.reduce((acc, cv) => {
-    acc = acc + cv;
-    return acc;
-  }, 0);
-  let avg = sum / array.length;
-  return avg;
+  return (
+    array.reduce((acc, cv) => {
+      acc = acc + cv;
+      return acc;
+    }, 0) / array.length
+  );
 };
 console.log(averageNumbers(numbers));
 
@@ -139,3 +139,13 @@ let strings = [
 ];
 
 // - Write a function averageWordLength that receives an array of words2 and calculate the average length of the words.
+function averageWordLength(words) {
+  return (
+    words
+      .map((w) => w.length)
+      .reduce((acc, cv) => {
+        acc = acc + cv;
+        return acc;
+      }, 0) / words.length
+  );
+}
